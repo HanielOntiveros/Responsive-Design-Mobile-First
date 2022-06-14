@@ -13,8 +13,72 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 html{
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+}
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background:linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+header .header_image_logo img {
+    width: 15rem;
+    height: 2.4rem;
+    margin-top: 6rem;
+    align-self: center;
+}
+.header_tittle_container{
+    width: 90%;
+    min-width: 28.8rem;
+    max-width: 90rem;
+    height: 21.8rem;
+    margin-top: 4rem;
+    text-align: center;
+    align-self: center;
+}
+.header_tittle_container h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.header_tittle_container p{
+    margin-top:2.5rem; 
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+.header_tittle_container .header_button{
+    position: absolute;
+    left: calc(50% - 150px);
+    top: 27rem;
+    display: block;
+    margin: 3.5rem;
+    padding: 1.5rem;
+    width: 22.9rem;
+    height: 4.8rem;
+    background-color: var(--off-white);
+    box-shadow: 0px 4px 8px rgb(89,73,40,0.16);
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--black);
+}
+.header_button span{
+    display: inline-block;
+    width: 1.3rem;
+    height: .8rem;
+    margin-left: 1rem;
+    background-image: url('../assets/icons/down-arrow.svg');
 }
